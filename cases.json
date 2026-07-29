@@ -86,5 +86,13 @@
   "subtitle": "Priorizar la interpretación integral sobre un dato aislado",
   "level": "Experto",
   "available": true
+},
+ {
+  "id": "case12",
+  "number": 12,
+  "title": "Hemorragia obstétrica con evolución dinámica",
+  "subtitle": "Adaptar el tratamiento conforme cambia el TEG",
+  "level": "Experto",
+  "available": true
 } 
 ]
