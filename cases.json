@@ -78,5 +78,13 @@
   "subtitle": "Integración del TEG con el contexto clínico",
   "level": "Experto",
   "available": true
+},
+ {
+  "id": "case11",
+  "number": 11,
+  "title": "Sangrado difuso con datos discordantes",
+  "subtitle": "Priorizar la interpretación integral sobre un dato aislado",
+  "level": "Experto",
+  "available": true
 } 
 ]
