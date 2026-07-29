@@ -22,5 +22,13 @@
     "subtitle": "Formación lenta y coágulo débil",
     "level": "Básico",
     "available": true
-  }
+  },
+  {
+  "id": "case04",
+  "number": 4,
+  "title": "Trombocitopenia / Disfunción plaquetaria",
+  "subtitle": "MA disminuido con R normal",
+  "level": "Intermedio",
+  "available": true
+}
 ]
