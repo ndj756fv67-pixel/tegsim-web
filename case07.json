@@ -1,0 +1,124 @@
+{
+  "id": "case07",
+  "number": 7,
+  "title": "Hemorragia obstétrica con reevaluación hemostática",
+  "subtitle": "Interpretación seriada del TEG",
+  "level": "Avanzado",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Emergencia obstétrica",
+    "title": "Persistencia de sangrado tras el manejo inicial",
+    "description": "Paciente de 31 años, G2P2, sometida a cesárea urgente por hemorragia obstétrica. Tras el control inicial de la fuente persiste sangrado difuso. Se solicita un TEG para dirigir el tratamiento y posteriormente valorar la respuesta.",
+    "monitor": {
+      "TA": "88/52 mmHg",
+      "FC": "126 lpm",
+      "SpO₂": "96 %",
+      "Temperatura": "35.8 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2100 mL",
+      "Sangrado activo": "45 mL/min",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "7.8 g/dL",
+      "Plaquetas": "118000/µL",
+      "Fibrinógeno": "140 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "2 %",
+    "EPL": "2 %",
+    "IC": "-4.8",
+    "R": "7.8 min",
+    "K": "3.6 min",
+    "Alpha": "43°",
+    "MA": "54 mm",
+    "pattern": "low_fibrinogen"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "¿Existe hiperfibrinólisis?",
+      "answers": [
+        "No",
+        "Sí"
+      ],
+      "correct": 0,
+      "feedback": "La lisis no es el problema predominante."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Cuál es el principal defecto identificado?",
+      "answers": [
+        "Disminución del aporte de fibrina",
+        "Disfunción plaquetaria aislada",
+        "Hipercoagulabilidad"
+      ],
+      "correct": 0,
+      "feedback": "El ángulo α disminuido y K prolongado orientan a compromiso del fibrinógeno."
+    },
+    {
+      "id": "Q03",
+      "title": "¿Qué tratamiento dirigido es el más apropiado?",
+      "answers": [
+        "Reposición de fibrinógeno según protocolo institucional",
+        "Esperar sin intervenir",
+        "Solo concentrado plaquetario"
+      ],
+      "correct": 0,
+      "feedback": "Debe corregirse el defecto predominante además del manejo integral."
+    },
+    {
+      "id": "Q04",
+      "title": "Tras el tratamiento se obtiene un segundo TEG. ¿Qué indica la mejoría del ángulo α a 67° y K a 1.6 min?",
+      "answers": [
+        "Respuesta favorable al tratamiento",
+        "Empeoramiento",
+        "Nueva hiperfibrinólisis"
+      ],
+      "correct": 0,
+      "feedback": "Los parámetros muestran una mejor formación del coágulo."
+    },
+    {
+      "id": "Q05",
+      "title": "Con el segundo TEG y menor sangrado activo, ¿cuál es la conducta?",
+      "answers": [
+        "Continuar vigilancia y tratar según evolución clínica",
+        "Repetir el mismo tratamiento de forma rutinaria",
+        "Ignorar el cambio del TEG"
+      ],
+      "correct": 0,
+      "feedback": "El tratamiento debe reevaluarse con la evolución clínica y el nuevo TEG."
+    }
+  ],
+  "evolution": {
+    "after": "25 min",
+    "description": "Después del tratamiento dirigido y la reevaluación, el sangrado disminuye de forma importante. El segundo TEG muestra mejor formación del coágulo.",
+    "monitor": {
+      "TA": "108/68 mmHg",
+      "FC": "96 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2350 mL",
+      "Sangrado activo": "6 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "LY30": "2 %",
+      "EPL": "2 %",
+      "IC": "-0.8",
+      "R": "6.5 min",
+      "K": "1.6 min",
+      "Alpha": "67°",
+      "MA": "58 mm"
+    }
+  },
+  "diagnosis": "Hipofibrinogenemia con respuesta favorable al tratamiento guiado por TEG.",
+  "debrief": [
+    "El diagnóstico no se revela al inicio; debe deducirse.",
+    "El segundo TEG permite valorar la eficacia del tratamiento.",
+    "La pérdida acumulada aumentó, pero el sangrado activo disminuyó de forma significativa.",
+    "La reevaluación seriada es una de las principales fortalezas del TEG en hemorragia obstétrica."
+  ]
+}
