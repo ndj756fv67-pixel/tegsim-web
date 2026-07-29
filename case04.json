@@ -1,0 +1,152 @@
+{
+  "id": 4,
+  "title": "Trombocitopenia / Disfunción plaquetaria",
+  "difficulty": "Intermedio",
+  "estimatedTime": "8-10 min",
+
+  "learningObjectives": [
+    "Identificar un MA disminuido como alteración plaquetaria.",
+    "Diferenciar trombocitopenia de hipofibrinogenemia.",
+    "Seleccionar el tratamiento hemostático adecuado."
+  ],
+
+  "clinicalCase": {
+    "patient": "Femenina de 31 años",
+    "obstetricHistory": "G2P2",
+    "procedure": "Cesárea urgente por sufrimiento fetal.",
+    "history": "Durante el procedimiento presenta atonía uterina. Se administra oxitocina y masaje uterino. Persiste hemorragia, por lo que se solicita tromboelastografía."
+  },
+
+  "monitor": {
+    "heartRate": 104,
+    "bloodPressure": "108/68",
+    "respiratoryRate": 18,
+    "spo2": 98,
+    "temperature": 36.4
+  },
+
+  "hemorrhage": {
+    "accumulatedBloodLoss": 1350,
+    "activeBleeding": "120 mL/min",
+    "sourceControl": "Parcial"
+  },
+
+  "teg": {
+    "trace": "platelet_defect",
+    "valuesHidden": true,
+
+    "values": {
+      "R": 6.3,
+      "K": 1.8,
+      "Alpha": 69,
+      "MA": 37,
+      "LY30": 0.5
+    }
+  },
+
+  "questions": [
+
+    {
+      "id": 1,
+      "type": "single",
+      "question": "¿Cuál es el primer parámetro claramente alterado?",
+      "options": [
+        "R",
+        "Ángulo α",
+        "MA",
+        "LY30"
+      ],
+      "correct": 2,
+      "explanation": "La principal alteración corresponde a una disminución importante del MA."
+    },
+
+    {
+      "id": 2,
+      "type": "single",
+      "question": "¿Cuál es el diagnóstico más probable?",
+      "options": [
+        "Déficit de factores",
+        "Hipofibrinogenemia",
+        "Trombocitopenia / disfunción plaquetaria",
+        "Hiperfibrinólisis"
+      ],
+      "correct": 2,
+      "explanation": "Un MA bajo con R, K y ángulo α conservados orienta a alteración plaquetaria."
+    },
+
+    {
+      "id": 3,
+      "type": "single",
+      "question": "¿Cuál es el tratamiento inicial más adecuado?",
+      "options": [
+        "Plasma fresco congelado",
+        "Crioprecipitado",
+        "Concentrado plaquetario",
+        "Ácido tranexámico"
+      ],
+      "correct": 2,
+      "explanation": "La disminución del MA secundaria a trombocitopenia requiere reposición plaquetaria."
+    }
+
+  ],
+
+  "evolution": {
+
+    "monitor": {
+      "heartRate": 92,
+      "bloodPressure": "118/74",
+      "respiratoryRate": 17,
+      "spo2": 99,
+      "temperature": 36.5
+    },
+
+    "hemorrhage": {
+      "accumulatedBloodLoss": 1520,
+      "activeBleeding": "35 mL/min",
+      "sourceControl": "Completo"
+    },
+
+    "secondTEG": {
+
+      "trace": "normal",
+
+      "values": {
+        "R": 6.1,
+        "K": 1.6,
+        "Alpha": 71,
+        "MA": 59,
+        "LY30": 0.3
+      }
+
+    }
+
+  },
+
+  "finalQuestion": {
+    "question": "¿Cómo interpreta el segundo TEG?",
+    "options": [
+      "Persistencia de trombocitopenia",
+      "Corrección adecuada de la alteración plaquetaria",
+      "Déficit de fibrinógeno",
+      "Hiperfibrinólisis"
+    ],
+    "correct": 1,
+    "explanation": "El incremento del MA demuestra recuperación de la fuerza del coágulo tras la administración de plaquetas."
+  },
+
+  "debriefing": {
+    "summary": [
+      "El MA representa principalmente la fuerza máxima del coágulo.",
+      "Un MA disminuido con R y ángulo α normales orienta a trombocitopenia o disfunción plaquetaria.",
+      "El tratamiento indicado es concentrado plaquetario cuando existe hemorragia activa y alteración del MA.",
+      "El plasma fresco congelado no corrige una trombocitopenia aislada."
+    ]
+  },
+
+  "score": {
+    "question1": 20,
+    "question2": 30,
+    "question3": 30,
+    "finalQuestion": 20
+  }
+}
