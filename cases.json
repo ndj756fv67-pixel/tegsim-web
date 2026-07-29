@@ -102,5 +102,13 @@
   "subtitle": "Reconocer una coagulopatía de consumo rápidamente progresiva",
   "level": "Experto",
   "available": true
-} 
+},
+  {
+  "id": "case14",
+  "number": 14,
+  "title": "Hemorragia masiva con múltiples alteraciones",
+  "subtitle": "Priorizar el tratamiento hemostático",
+  "level": "Experto",
+  "available": true
+}
 ]
