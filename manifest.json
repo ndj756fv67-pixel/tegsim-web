@@ -1,0 +1,9 @@
+{
+  "name": "TEG SIM",
+  "short_name": "TEG SIM",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111c",
+  "theme_color": "#07111c",
+  "description": "Simulador interactivo de tromboelastografía en hemorragia obstétrica"
+}

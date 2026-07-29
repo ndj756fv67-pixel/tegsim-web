@@ -1,2 +1,5 @@
-# tegsim-web
-Simulador interactivo de tromboelastografia en obstetricia 
+# TEG SIM®
+
+Simulador web interactivo de tromboelastografía en hemorragia obstétrica.
+
+Sitio estático preparado para Vercel.

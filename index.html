@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#07111c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="TEG SIM" />
+  <title>TEG SIM®</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <section id="home" class="screen active">
+      <div class="hero">
+        <div class="brand-mark">TS</div>
+        <p class="eyebrow">Simulación clínica interactiva</p>
+        <h1>TEG SIM<sup>®</sup></h1>
+        <p class="hero-copy">Entrenamiento práctico para interpretar tromboelastografía en hemorragia obstétrica.</p>
+        <div class="hero-actions">
+          <button class="primary" data-go="cases">Iniciar simulador</button>
+          <button class="secondary" data-go="library">Biblioteca TEG</button>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <article><span>01</span><h2>Casos clínicos</h2><p>Decisiones progresivas, retroalimentación inmediata y puntuación.</p></article>
+        <article><span>02</span><h2>Algoritmo</h2><p>Ruta de interpretación: lisis, R, MA y ángulo alfa.</p></article>
+        <article><span>03</span><h2>Compatible con iPad</h2><p>Úsalo desde Safari y agrégalo a la pantalla de inicio.</p></article>
+      </div>
+    </section>
+
+    <section id="cases" class="screen">
+      <header class="topbar">
+        <button class="back" data-go="home">← Inicio</button>
+        <div><p class="eyebrow">Modo simulación</p><h2>Casos clínicos</h2></div>
+      </header>
+      <div class="case-list">
+        <button class="case-card available" data-start-case="factor"><div><span class="case-number">Caso 1</span><h3>Déficit de factores</h3><p>Atonía uterina con R prolongado.</p></div><span class="status">Disponible</span></button>
+        <button class="case-card locked" disabled><div><span class="case-number">Caso 2</span><h3>Hipofibrinogenemia</h3><p>Ángulo alfa disminuido.</p></div><span class="status">Próximamente</span></button>
+        <button class="case-card locked" disabled><div><span class="case-number">Caso 3</span><h3>Disfunción plaquetaria</h3><p>MA disminuida con R conservado.</p></div><span class="status">Próximamente</span></button>
+      </div>
+    </section>
+
+    <section id="library" class="screen">
+      <header class="topbar">
+        <button class="back" data-go="home">← Inicio</button>
+        <div><p class="eyebrow">Consulta rápida</p><h2>Biblioteca TEG</h2></div>
+      </header>
+      <div class="library-grid">
+        <article><h3>R prolongado</h3><p>Sugiere retraso en el inicio de la coagulación y posible déficit de factores.</p></article>
+        <article><h3>Ángulo α disminuido</h3><p>Orienta a formación lenta de fibrina y posible hipofibrinogenemia.</p></article>
+        <article><h3>MA disminuida</h3><p>Puede indicar alteración plaquetaria o menor fuerza global del coágulo.</p></article>
+        <article><h3>LY30 elevado</h3><p>Orienta a hiperfibrinólisis; debe interpretarse con el contexto clínico.</p></article>
+      </div>
+      <div class="notice">Material educativo. La conducta clínica debe seguir protocolos institucionales y valoración médica integral.</div>
+    </section>
+
+    <section id="simulation" class="screen">
+      <header class="topbar">
+        <button class="back" data-go="cases">← Casos</button>
+        <div><p class="eyebrow">Caso 1</p><h2>Déficit de factores</h2></div>
+        <div class="score-box"><span id="score">0</span><small>puntos</small></div>
+      </header>
+      <div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div>
+      <div id="simulationContent"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
