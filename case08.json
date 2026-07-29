@@ -1,0 +1,125 @@
+{
+  "id": "case08",
+  "number": 8,
+  "title": "Hemorragia obstétrica con deterioro progresivo",
+  "subtitle": "Integración clínica y reevaluación",
+  "level": "Experto",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Emergencia obstétrica",
+    "title": "Persistencia de sangrado pese al manejo inicial",
+    "description": "Paciente de 37 años, G5P4, sometida a cesárea urgente por hemorragia obstétrica. Después del control inicial de la fuente persiste sangrado difuso y continúa el deterioro hemodinámico. Se realiza un TEG para dirigir el tratamiento.",
+    "monitor": {
+      "TA": "84/50 mmHg",
+      "FC": "134 lpm",
+      "SpO₂": "95 %",
+      "Temperatura": "35.2 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2900 mL",
+      "Sangrado activo": "60 mL/min",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "6.9 g/dL",
+      "Plaquetas": "92000/µL",
+      "Fibrinógeno": "135 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "1 %",
+    "EPL": "1 %",
+    "IC": "-5.5",
+    "R": "10.6 min",
+    "K": "3.4 min",
+    "Alpha": "45°",
+    "MA": "46 mm",
+    "pattern": "combined"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "¿Existe hiperfibrinólisis significativa?",
+      "answers": [
+        "No",
+        "Sí"
+      ],
+      "correct": 0,
+      "feedback": "La lisis está conservada; continúe con el algoritmo."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Qué alteración identifica primero después de descartar lisis?",
+      "answers": [
+        "Hipocoagulabilidad global con R prolongado",
+        "Hipercoagulabilidad",
+        "Alteración aislada de plaquetas"
+      ],
+      "correct": 0,
+      "feedback": "El IC negativo y el R prolongado indican alteración importante de la coagulación."
+    },
+    {
+      "id": "Q03",
+      "title": "¿Qué sugiere la combinación de α bajo y MA disminuida?",
+      "answers": [
+        "Compromiso combinado de fibrina y fuerza del coágulo",
+        "TEG normal",
+        "Hiperfibrinólisis aislada"
+      ],
+      "correct": 0,
+      "feedback": "Existe un patrón mixto que requiere integración clínica."
+    },
+    {
+      "id": "Q04",
+      "title": "Tras el tratamiento dirigido, un segundo TEG muestra R de 6.4 min, α de 64° y MA de 57 mm. ¿Cómo interpreta estos cambios?",
+      "answers": [
+        "Respuesta adecuada al tratamiento",
+        "Persistencia de la misma alteración",
+        "Empeoramiento del estado de coagulación"
+      ],
+      "correct": 0,
+      "feedback": "Los parámetros muestran una mejoría significativa de la coagulación."
+    },
+    {
+      "id": "Q05",
+      "title": "Con menor sangrado activo y mejor TEG, ¿cuál es la conducta más apropiada?",
+      "answers": [
+        "Continuar vigilancia, control de la fuente y reevaluación clínica",
+        "Repetir automáticamente todos los hemoderivados",
+        "Suspender toda monitorización"
+      ],
+      "correct": 0,
+      "feedback": "Las decisiones deben basarse en la evolución clínica y la reevaluación hemostática."
+    }
+  ],
+  "evolution": {
+    "after": "30 min",
+    "description": "Después del tratamiento guiado por TEG y del control definitivo de la fuente, el sangrado disminuye y la estabilidad hemodinámica mejora.",
+    "monitor": {
+      "TA": "106/65 mmHg",
+      "FC": "98 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "3250 mL",
+      "Sangrado activo": "5 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "LY30": "1 %",
+      "EPL": "1 %",
+      "IC": "-0.6",
+      "R": "6.4 min",
+      "K": "1.7 min",
+      "Alpha": "64°",
+      "MA": "57 mm"
+    }
+  },
+  "diagnosis": "Patrón mixto de coagulopatía con respuesta favorable al tratamiento guiado por TEG.",
+  "debrief": [
+    "El contexto clínico no revela el diagnóstico; debe integrarse con el TEG.",
+    "El algoritmo debe seguirse siempre en el mismo orden: lisis, IC, R, MA, ángulo α e integración clínica.",
+    "El segundo TEG confirma la respuesta al tratamiento.",
+    "La pérdida acumulada aumentó de 2900 a 3250 mL; lo que disminuyó fue el sangrado activo.",
+    "La reevaluación clínica es tan importante como la interpretación del TEG."
+  ]
+}
