@@ -110,5 +110,13 @@
   "subtitle": "Priorizar el tratamiento hemostático",
   "level": "Experto",
   "available": true
+},
+  {
+  "id": "case15",
+  "number": 15,
+  "title": "Hemorragia obstétrica masiva: simulación integradora",
+  "subtitle": "Aplicación completa del algoritmo TEG",
+  "level": "Experto",
+  "available": true
 }
 ]
