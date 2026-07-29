@@ -1,0 +1,117 @@
+{
+  "id": "case06",
+  "number": 6,
+  "title": "Hemorragia obstétrica masiva",
+  "subtitle": "Interpretación integral del TEG",
+  "level": "Avanzado",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Emergencia obstétrica",
+    "title": "Sangrado persistente durante cesárea de urgencia",
+    "description": "Paciente de 34 años, G4P3, de 36 semanas de gestación. Ingresa por dolor abdominal intenso, hipertonía uterina y compromiso fetal. Se realiza cesárea urgente. Tras la extracción fetal persiste sangrado difuso en el campo quirúrgico y en sitios de punción, con formación deficiente de coágulos. Se solicita TEG para guiar la reanimación hemostática.",
+    "monitor": {
+      "TA": "82/46 mmHg",
+      "FC": "132 lpm",
+      "SpO₂": "95 %",
+      "Temperatura": "35.4 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2750 mL",
+      "Sangrado activo": "70 mL/min",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "7.2 g/dL",
+      "Plaquetas": "68000/µL",
+      "Fibrinógeno": "110 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "12 %",
+    "EPL": "16 %",
+    "IC": "-7.4",
+    "R": "11.8 min",
+    "K": "4.2 min",
+    "Alpha": "39°",
+    "MA": "38 mm",
+    "pattern": "mixed"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1. ¿Existe hiperfibrinólisis?",
+      "answers": [
+        "Sí, LY30/EPL elevados",
+        "No",
+        "No puede determinarse"
+      ],
+      "correct": 0,
+      "feedback": "La lisis debe evaluarse primero."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Cómo interpreta el índice de coagulación?",
+      "answers": [
+        "Hipocoagulabilidad global",
+        "Normal",
+        "Hipercoagulabilidad"
+      ],
+      "correct": 0,
+      "feedback": "El IC muy negativo refleja alteración global."
+    },
+    {
+      "id": "Q03",
+      "title": "¿Qué indica el R prolongado?",
+      "answers": [
+        "Déficit/consumo de factores",
+        "Alteración plaquetaria aislada",
+        "Normal"
+      ],
+      "correct": 0,
+      "feedback": "R prolongado indica retraso en el inicio de la coagulación."
+    },
+    {
+      "id": "Q04",
+      "title": "¿Qué sugieren MA y α disminuidos?",
+      "answers": [
+        "Coágulo débil con compromiso de fibrina y plaquetas",
+        "Solo hiperfibrinólisis",
+        "Sin alteraciones"
+      ],
+      "correct": 0,
+      "feedback": "Existe alteración importante de la firmeza y formación del coágulo."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Cuál es la mejor conducta?",
+      "answers": [
+        "Tratamiento multimodal guiado por TEG y control definitivo de la fuente",
+        "Esperar otro TEG",
+        "Administrar solo plasma"
+      ],
+      "correct": 0,
+      "feedback": "El patrón requiere tratamiento combinado según protocolo institucional."
+    }
+  ],
+  "evolution": {
+    "after": "20 min",
+    "description": "Tras control quirúrgico de la fuente, reanimación hemostática guiada por TEG y corrección de hipotermia, disminuye el sangrado y mejora la estabilidad hemodinámica.",
+    "monitor": {
+      "TA": "101/63 mmHg",
+      "FC": "102 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "3150 mL",
+      "Sangrado activo": "8 mL/min",
+      "Fuente": "Controlada"
+    }
+  },
+  "diagnosis": "Patrón compatible con coagulopatía de consumo en el contexto de hemorragia obstétrica masiva.",
+  "debrief": [
+    "El contexto clínico no revela el diagnóstico; debe integrarse con el TEG.",
+    "El algoritmo se aplica en el orden: lisis, IC, R, MA, ángulo α e integración clínica.",
+    "Este caso muestra un patrón mixto con múltiples alteraciones simultáneas.",
+    "La pérdida acumulada nunca disminuye; solo puede reducirse el sangrado activo.",
+    "El tratamiento debe individualizarse conforme al protocolo institucional y al control de la fuente."
+  ]
+}
