@@ -1,0 +1,126 @@
+{
+  "id": "case14",
+  "number": 14,
+  "title": "Hemorragia masiva con múltiples alteraciones",
+  "subtitle": "Priorizar el tratamiento hemostático",
+  "level": "Experto",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Competencia 3",
+    "title": "¿Qué corregir primero?",
+    "description": "Paciente de 34 años, G4P4, con hemorragia obstétrica masiva posterior a acretismo placentario. Recibe reanimación inicial, pero continúa con sangrado importante. El equipo dispone de varios componentes sanguíneos y solicita un TEG para priorizar el tratamiento.",
+    "monitor": {
+      "TA": "80/46 mmHg",
+      "FC": "136 lpm",
+      "SpO₂": "95 %",
+      "Temperatura": "35.5 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2800 mL",
+      "Sangrado activo": "55 mL/min",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "6.9 g/dL",
+      "Plaquetas": "82000/µL",
+      "Fibrinógeno": "135 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "2 %",
+    "EPL": "2 %",
+    "IC": "-4.4",
+    "R": "10.8 min",
+    "K": "3.6 min",
+    "Alpha": "41°",
+    "MA": "47 mm",
+    "pattern": "mixed"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1. ¿Existe hiperfibrinólisis?",
+      "answers": [
+        "No, LY30 y EPL no muestran hiperfibrinólisis significativa",
+        "Sí, por el volumen del sangrado",
+        "No puede determinarse"
+      ],
+      "correct": 0,
+      "feedback": "La lisis no es el defecto predominante."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Cuál es el defecto funcional predominante?",
+      "answers": [
+        "Hipocoagulabilidad multifactorial con alteración de factores y fibrinógeno",
+        "Disfunción plaquetaria aislada",
+        "TEG normal"
+      ],
+      "correct": 0,
+      "feedback": "R prolongado, K prolongado y ángulo α reducido indican un defecto combinado."
+    },
+    {
+      "id": "Q03",
+      "title": "Si solo pudiera corregir primero un componente, ¿cuál tendría mayor impacto inmediato según el TEG?",
+      "answers": [
+        "Corregir el déficit de factores de coagulación",
+        "Administrar únicamente plaquetas",
+        "Administrar únicamente antifibrinolítico"
+      ],
+      "correct": 0,
+      "feedback": "El R prolongado señala un retraso importante en el inicio de la coagulación."
+    },
+    {
+      "id": "Q04",
+      "title": "Tras corregir los factores, ¿qué debe reevaluarse?",
+      "answers": [
+        "Repetir el TEG para identificar el siguiente defecto predominante",
+        "Administrar todos los componentes restantes sin reevaluar",
+        "Finalizar el tratamiento"
+      ],
+      "correct": 0,
+      "feedback": "La prioridad cambia conforme evoluciona la coagulación."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Cuál es la enseñanza principal?",
+      "answers": [
+        "No todas las alteraciones deben corregirse al mismo tiempo; el TEG ayuda a priorizar",
+        "Siempre deben administrarse todos los hemoderivados",
+        "El laboratorio sustituye al TEG"
+      ],
+      "correct": 0,
+      "feedback": "La secuencia terapéutica mejora la eficacia y evita intervenciones innecesarias."
+    }
+  ],
+  "evolution": {
+    "after": "40 min",
+    "description": "Tras corregir inicialmente el déficit de factores y repetir el TEG, se identificó persistencia de hipofibrinogenemia, la cual fue tratada de forma dirigida. El sangrado disminuyó de manera progresiva después del control definitivo de la fuente.",
+    "monitor": {
+      "TA": "106/64 mmHg",
+      "FC": "98 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "3450 mL",
+      "Sangrado activo": "6 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "LY30": "1 %",
+      "EPL": "1 %",
+      "IC": "-0.8",
+      "R": "6.7 min",
+      "K": "2.0 min",
+      "Alpha": "63°",
+      "MA": "56 mm"
+    }
+  },
+  "diagnosis": "Hemorragia obstétrica masiva con coagulopatía multifactorial que requiere tratamiento hemostático priorizado y reevaluación seriada.",
+  "debrief": [
+    "El algoritmo debe seguir el mismo orden en todos los casos: lisis, IC, R, MA, ángulo α e integración clínica.",
+    "La presencia de varias alteraciones no implica corregir todos los componentes simultáneamente.",
+    "El TEG permite identificar el defecto predominante y establecer prioridades terapéuticas.",
+    "La reevaluación seriada evita tratamientos innecesarios y detecta nuevos defectos funcionales.",
+    "La pérdida acumulada aumentó de 2800 a 3450 mL; el sangrado activo disminuyó tras el tratamiento dirigido y el control de la fuente."
+  ]
+}
