@@ -1,152 +1,117 @@
 {
-  "id": 4,
+  "id": "case04",
+  "number": 4,
   "title": "Trombocitopenia / Disfunción plaquetaria",
-  "difficulty": "Intermedio",
-  "estimatedTime": "8-10 min",
-
-  "learningObjectives": [
-    "Identificar un MA disminuido como alteración plaquetaria.",
-    "Diferenciar trombocitopenia de hipofibrinogenemia.",
-    "Seleccionar el tratamiento hemostático adecuado."
-  ],
-
-  "clinicalCase": {
-    "patient": "Femenina de 31 años",
-    "obstetricHistory": "G2P2",
-    "procedure": "Cesárea urgente por sufrimiento fetal.",
-    "history": "Durante el procedimiento presenta atonía uterina. Se administra oxitocina y masaje uterino. Persiste hemorragia, por lo que se solicita tromboelastografía."
-  },
-
-  "monitor": {
-    "heartRate": 104,
-    "bloodPressure": "108/68",
-    "respiratoryRate": 18,
-    "spo2": 98,
-    "temperature": 36.4
-  },
-
-  "hemorrhage": {
-    "accumulatedBloodLoss": 1350,
-    "activeBleeding": "120 mL/min",
-    "sourceControl": "Parcial"
-  },
-
-  "teg": {
-    "trace": "platelet_defect",
-    "valuesHidden": true,
-
-    "values": {
-      "R": 6.3,
-      "K": 1.8,
-      "Alpha": 69,
-      "MA": 37,
-      "LY30": 0.5
-    }
-  },
-
-  "questions": [
-
-    {
-      "id": 1,
-      "type": "single",
-      "question": "¿Cuál es el primer parámetro claramente alterado?",
-      "options": [
-        "R",
-        "Ángulo α",
-        "MA",
-        "LY30"
-      ],
-      "correct": 2,
-      "explanation": "La principal alteración corresponde a una disminución importante del MA."
-    },
-
-    {
-      "id": 2,
-      "type": "single",
-      "question": "¿Cuál es el diagnóstico más probable?",
-      "options": [
-        "Déficit de factores",
-        "Hipofibrinogenemia",
-        "Trombocitopenia / disfunción plaquetaria",
-        "Hiperfibrinólisis"
-      ],
-      "correct": 2,
-      "explanation": "Un MA bajo con R, K y ángulo α conservados orienta a alteración plaquetaria."
-    },
-
-    {
-      "id": 3,
-      "type": "single",
-      "question": "¿Cuál es el tratamiento inicial más adecuado?",
-      "options": [
-        "Plasma fresco congelado",
-        "Crioprecipitado",
-        "Concentrado plaquetario",
-        "Ácido tranexámico"
-      ],
-      "correct": 2,
-      "explanation": "La disminución del MA secundaria a trombocitopenia requiere reposición plaquetaria."
-    }
-
-  ],
-
-  "evolution": {
-
+  "subtitle": "MA disminuido con R y ángulo α conservados",
+  "level": "Intermedio",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Hemorragia obstétrica",
+    "title": "Atonía uterina con alteración plaquetaria",
+    "description": "Paciente de 31 años, G2 P2, sometida a cesárea urgente por compromiso fetal. Durante el procedimiento presenta atonía uterina. Tras oxitocina, masaje uterino y medidas iniciales persiste el sangrado, por lo que se solicita TEG para orientar la terapia hemostática.",
     "monitor": {
-      "heartRate": 92,
-      "bloodPressure": "118/74",
-      "respiratoryRate": 17,
-      "spo2": 99,
-      "temperature": 36.5
+      "TA": "108/68 mmHg",
+      "FC": "104 lpm",
+      "SpO₂": "98 %",
+      "Temperatura": "36.4 °C"
     },
-
     "hemorrhage": {
-      "accumulatedBloodLoss": 1520,
-      "activeBleeding": "35 mL/min",
-      "sourceControl": "Completo"
+      "Pérdida acumulada": "1,350 mL",
+      "Sangrado activo": "Moderado (20 mL/min)",
+      "Fuente": "Parcialmente controlada"
     },
-
-    "secondTEG": {
-
-      "trace": "normal",
-
-      "values": {
-        "R": 6.1,
-        "K": 1.6,
-        "Alpha": 71,
-        "MA": 59,
-        "LY30": 0.3
-      }
-
+    "labs": {
+      "Hb": "8.7 g/dL",
+      "Plaquetas": "48,000/µL"
     }
-
   },
-
-  "finalQuestion": {
-    "question": "¿Cómo interpreta el segundo TEG?",
-    "options": [
-      "Persistencia de trombocitopenia",
-      "Corrección adecuada de la alteración plaquetaria",
-      "Déficit de fibrinógeno",
-      "Hiperfibrinólisis"
-    ],
-    "correct": 1,
-    "explanation": "El incremento del MA demuestra recuperación de la fuerza del coágulo tras la administración de plaquetas."
+  "teg": {
+    "LY30": "0.5 %",
+    "EPL": "1 %",
+    "IC": "−2.3",
+    "R": "6.3 min",
+    "K": "1.8 min",
+    "Alpha": "69°",
+    "MA": "37 mm",
+    "pattern": "platelet"
   },
-
-  "debriefing": {
-    "summary": [
-      "El MA representa principalmente la fuerza máxima del coágulo.",
-      "Un MA disminuido con R y ángulo α normales orienta a trombocitopenia o disfunción plaquetaria.",
-      "El tratamiento indicado es concentrado plaquetario cuando existe hemorragia activa y alteración del MA.",
-      "El plasma fresco congelado no corrige una trombocitopenia aislada."
-    ]
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1: ¿existe hiperfibrinólisis?",
+      "answers": [
+        "Sí, por LY30 elevado",
+        "No, LY30 y EPL no cumplen criterio"
+      ],
+      "correct": 1,
+      "feedback": "LY30 y EPL están por debajo de los umbrales de hiperfibrinólisis; se continúa con el algoritmo."
+    },
+    {
+      "id": "Q02",
+      "title": "Paso 2: ¿cómo interpreta el índice de coagulación?",
+      "answers": [
+        "IC >3: hipercoagulabilidad",
+        "IC dentro del rango sin desviación predominante",
+        "IC disminuido, compatible con tendencia hipocoagulable"
+      ],
+      "correct": 2,
+      "feedback": "El IC de −2.3 orienta hacia hipocoagulabilidad, pero debe identificarse el componente alterado mediante R, MA y ángulo α."
+    },
+    {
+      "id": "Q03",
+      "title": "Paso 3: ¿cómo interpreta R?",
+      "answers": [
+        "Prolongado: predomina déficit de factores",
+        "Conservado",
+        "Acortado: hipercoagulabilidad enzimática"
+      ],
+      "correct": 1,
+      "feedback": "R de 6.3 minutos está conservado y no orienta a déficit predominante de factores."
+    },
+    {
+      "id": "Q04",
+      "title": "Paso 4: MA <54 mm con ángulo α conservado sugiere:",
+      "answers": [
+        "Hipofibrinogenemia predominante",
+        "Trombocitopenia o disfunción plaquetaria",
+        "Hiperfibrinólisis",
+        "TEG normal"
+      ],
+      "correct": 1,
+      "feedback": "Una MA disminuida con ángulo α conservado orienta a alteración de la cantidad o función plaquetaria."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Cuál es la intervención hemostática dirigida más congruente?",
+      "answers": [
+        "Plasma fresco congelado como única intervención",
+        "Fibrinógeno o crioprecipitado como única intervención",
+        "Concentrado plaquetario según el contexto clínico y el protocolo institucional",
+        "Ácido tranexámico por LY30 normal"
+      ],
+      "correct": 2,
+      "feedback": "Con hemorragia activa, trombocitopenia y MA disminuida, la reposición plaquetaria es la intervención dirigida, sin sustituir el control de la fuente."
+    }
+  ],
+  "evolution": {
+    "after": "15 min",
+    "description": "Tras la administración de concentrado plaquetario y completar el control uterino, disminuye de forma importante el sangrado activo y mejora la estabilidad hemodinámica.",
+    "monitor": {
+      "TA": "118/74 mmHg",
+      "FC": "92 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1,520 mL",
+      "Sangrado activo": "Mínimo (3 mL/min)",
+      "Fuente": "Controlada"
+    }
   },
-
-  "score": {
-    "question1": 20,
-    "question2": 30,
-    "question3": 30,
-    "finalQuestion": 20
-  }
+  "diagnosis": "Trombocitopenia o disfunción plaquetaria",
+  "debrief": [
+    "Una MA disminuida refleja reducción de la fuerza máxima del coágulo.",
+    "Cuando R está conservado y el ángulo α no está disminuido, una MA baja orienta a trombocitopenia o disfunción plaquetaria.",
+    "El plasma fresco congelado no corrige una trombocitopenia aislada; la reposición debe dirigirse al componente alterado.",
+    "La terapia hemostática debe acompañar, nunca sustituir, el control de la fuente del sangrado.",
+    "La pérdida acumulada aumentó de 1,350 a 1,520 mL; nunca disminuye, aunque el sangrado activo se reduzca."
+  ]
 }
