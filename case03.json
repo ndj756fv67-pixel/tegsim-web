@@ -1,0 +1,112 @@
+{
+  "id": "case03",
+  "number": 3,
+  "title": "Hipofibrinogenemia",
+  "subtitle": "Formación lenta y coágulo débil",
+  "level": "Básico",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Hemorragia obstétrica",
+    "title": "Sangrado persistente tras desprendimiento placentario",
+    "description": "Paciente de 34 años con desprendimiento placentario y sangrado continuo. Se realiza control quirúrgico y TEG para identificar la alteración predominante.",
+    "monitor": {
+      "TA": "96/60 mmHg",
+      "FC": "118 lpm",
+      "SpO₂": "97 %",
+      "Temperatura": "35.9 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1,550 mL",
+      "Sangrado activo": "Moderado (18 mL/min)",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "8.4 g/dL"
+    }
+  },
+  "teg": {
+    "LY30": "2.0 %",
+    "EPL": "4 %",
+    "IC": "−2.7",
+    "R": "7.0 min",
+    "K": "4.2 min",
+    "Alpha": "39°",
+    "MA": "48 mm",
+    "pattern": "fibrinogen"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1: ¿existe hiperfibrinólisis?",
+      "answers": [
+        "Sí",
+        "No"
+      ],
+      "correct": 1,
+      "feedback": "LY30 y EPL están por debajo del umbral de hiperfibrinólisis."
+    },
+    {
+      "id": "Q02",
+      "title": "Paso 2: ¿IC >3?",
+      "answers": [
+        "Sí",
+        "No"
+      ],
+      "correct": 1,
+      "feedback": "IC no es mayor de 3; continúe con R, MA y ángulo α."
+    },
+    {
+      "id": "Q03",
+      "title": "Paso 3: ¿R >10 min?",
+      "answers": [
+        "Sí, predomina déficit de factores",
+        "No, el inicio de coagulación está relativamente conservado"
+      ],
+      "correct": 1,
+      "feedback": "R de 7 minutos no cumple criterio de déficit predominante de factores."
+    },
+    {
+      "id": "Q04",
+      "title": "Paso 4: MA <54 mm y ángulo α <47° sugieren:",
+      "answers": [
+        "Disfunción plaquetaria aislada",
+        "Bajo nivel o función de fibrinógeno",
+        "Hipercoagulabilidad",
+        "TEG normal"
+      ],
+      "correct": 1,
+      "feedback": "La combinación de MA baja y ángulo α bajo orienta a hipofibrinogenemia."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Cuál es la intervención dirigida más congruente?",
+      "answers": [
+        "Plasma como única terapia",
+        "Fibrinógeno o crioprecipitado según protocolo",
+        "Plaquetas como única terapia",
+        "No tratar"
+      ],
+      "correct": 1,
+      "feedback": "La reposición de fibrinógeno debe integrarse con el control de la fuente y el protocolo institucional."
+    }
+  ],
+  "evolution": {
+    "after": "12 min",
+    "description": "Tras reposición dirigida de fibrinógeno y control quirúrgico, disminuye el sangrado activo.",
+    "monitor": {
+      "TA": "108/68 mmHg",
+      "FC": "101 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1,760 mL",
+      "Sangrado activo": "Mínimo (3 mL/min)",
+      "Fuente": "Controlada"
+    }
+  },
+  "diagnosis": "Hipofibrinogenemia",
+  "debrief": [
+    "Con R no prolongado, una MA baja obliga a revisar el ángulo α.",
+    "MA <54 mm y α <47° orientan a bajo nivel o función de fibrinógeno en este algoritmo.",
+    "El tratamiento debe acompañar, no sustituir, el control de la hemorragia."
+  ]
+}

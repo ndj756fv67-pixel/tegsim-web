@@ -1,0 +1,26 @@
+[
+  {
+    "id": "case01",
+    "number": 1,
+    "title": "TEG normal",
+    "subtitle": "Cesárea electiva sin coagulopatía",
+    "level": "Básico",
+    "available": true
+  },
+  {
+    "id": "case02",
+    "number": 2,
+    "title": "Déficit de factores",
+    "subtitle": "Hemorragia posparto con R prolongado",
+    "level": "Básico",
+    "available": true
+  },
+  {
+    "id": "case03",
+    "number": 3,
+    "title": "Hipofibrinogenemia",
+    "subtitle": "Formación lenta y coágulo débil",
+    "level": "Básico",
+    "available": true
+  }
+]

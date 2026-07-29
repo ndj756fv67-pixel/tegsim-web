@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "id": "teg-obstetric-algorithm",
+  "title": "Algoritmo de interpretación de tromboelastografía",
+  "source_note": "Adaptado al diagrama proporcionado por la autora del simulador. Validar umbrales con equipo, reactivo y protocolo institucional.",
+  "sequence": [
+    "LY30/EPL",
+    "IC",
+    "R",
+    "MA",
+    "Ángulo α",
+    "Integración clínica",
+    "Tratamiento"
+  ],
+  "nodes": [
+    {
+      "id": "lysis",
+      "label": "¿EPL >15% o LY30 >7.5%?",
+      "yes": "lysis_ci",
+      "no": "ci"
+    },
+    {
+      "id": "lysis_ci",
+      "label": "Índice de coagulación (IC)",
+      "branches": [
+        {
+          "condition": "IC <3",
+          "result": "Fibrinólisis primaria"
+        },
+        {
+          "condition": "IC >3",
+          "result": "Fibrinólisis secundaria"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "label": "¿IC >3?",
+      "yes": "r_short",
+      "no": "r_long"
+    },
+    {
+      "id": "r_long",
+      "label": "¿R >10 min?",
+      "yes": "factor_deficiency",
+      "no": "ma_low"
+    },
+    {
+      "id": "factor_deficiency",
+      "result": "Factores de coagulación disminuidos o no funcionales"
+    },
+    {
+      "id": "ma_low",
+      "label": "¿MA <54 mm?",
+      "yes": "alpha_low",
+      "no": "normal_pattern"
+    },
+    {
+      "id": "alpha_low",
+      "label": "¿Ángulo α <47°?",
+      "yes": "low_fibrinogen",
+      "no": "platelet_dysfunction"
+    },
+    {
+      "id": "low_fibrinogen",
+      "result": "Bajo nivel o función de fibrinógeno"
+    },
+    {
+      "id": "platelet_dysfunction",
+      "result": "Función plaquetaria disminuida"
+    },
+    {
+      "id": "normal_pattern",
+      "result": "Patrón sin alteración predominante por este algoritmo"
+    },
+    {
+      "id": "r_short",
+      "label": "¿R <4 min?",
+      "yes": "ma_high",
+      "no": "enzymatic_hypercoag"
+    },
+    {
+      "id": "enzymatic_hypercoag",
+      "result": "Hipercoagulabilidad enzimática"
+    },
+    {
+      "id": "ma_high",
+      "label": "¿MA >72 mm?",
+      "yes": "combined_hypercoag",
+      "no": "enzymatic_hypercoag"
+    },
+    {
+      "id": "combined_hypercoag",
+      "result": "Hipercoagulabilidad enzimática y plaquetaria"
+    }
+  ]
+}

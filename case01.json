@@ -1,0 +1,113 @@
+{
+  "id": "case01",
+  "number": 1,
+  "title": "TEG normal",
+  "subtitle": "Cesárea electiva sin coagulopatía",
+  "level": "Básico",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Cesárea electiva",
+    "title": "Hemostasia conservada",
+    "description": "Paciente de 28 años, G2 P1, sometida a cesárea electiva. Útero con buen tono, campo quirúrgico con sangrado escaso y estabilidad hemodinámica.",
+    "monitor": {
+      "TA": "118/72 mmHg",
+      "FC": "88 lpm",
+      "SpO₂": "99 %",
+      "Temperatura": "36.7 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "650 mL",
+      "Sangrado activo": "Escaso (<1 mL/min)",
+      "Fuente": "Controlada"
+    },
+    "labs": {
+      "Hb": "10.9 g/dL"
+    }
+  },
+  "teg": {
+    "LY30": "1.0 %",
+    "EPL": "2 %",
+    "IC": "1.2",
+    "R": "5.8 min",
+    "K": "1.7 min",
+    "Alpha": "68°",
+    "MA": "65 mm",
+    "pattern": "normal"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1: ¿existe hiperfibrinólisis?",
+      "answers": [
+        "Sí, por LY30 elevado",
+        "No, LY30 y EPL no cumplen criterio"
+      ],
+      "correct": 1,
+      "feedback": "LY30 y EPL están por debajo de los umbrales del algoritmo."
+    },
+    {
+      "id": "Q02",
+      "title": "Paso 2: ¿cómo interpreta el índice de coagulación?",
+      "answers": [
+        "IC >3: hipercoagulabilidad",
+        "IC dentro de rango sin desviación predominante",
+        "IC <−3: hipocoagulabilidad grave"
+      ],
+      "correct": 1,
+      "feedback": "El IC no orienta a hipercoagulabilidad ni a hipocoagulabilidad marcada."
+    },
+    {
+      "id": "Q03",
+      "title": "Paso 3: ¿cómo interpreta R?",
+      "answers": [
+        "Prolongado: déficit de factores",
+        "Conservado",
+        "Acortado: hipercoagulabilidad enzimática"
+      ],
+      "correct": 1,
+      "feedback": "R de 5.8 min no cumple criterio de R >10 ni de R <4."
+    },
+    {
+      "id": "Q04",
+      "title": "Paso 4: ¿cómo interpreta MA y ángulo α?",
+      "answers": [
+        "Ambos conservados",
+        "MA baja con ángulo bajo",
+        "MA alta con ángulo normal"
+      ],
+      "correct": 0,
+      "feedback": "La fuerza y formación del coágulo están conservadas."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Cuál es la conducta hemostática más apropiada?",
+      "answers": [
+        "Plasma fresco congelado",
+        "Fibrinógeno o crioprecipitado",
+        "Plaquetas",
+        "No administrar tratamiento hemostático"
+      ],
+      "correct": 3,
+      "feedback": "No existe una alteración TEG que justifique hemoderivados."
+    }
+  ],
+  "evolution": {
+    "after": "10 min",
+    "description": "La cirugía concluye sin complicaciones y sin hemoderivados.",
+    "monitor": {
+      "TA": "120/74 mmHg",
+      "FC": "84 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "680 mL",
+      "Sangrado activo": "Ausente",
+      "Fuente": "Controlada"
+    }
+  },
+  "diagnosis": "Patrón TEG normal",
+  "debrief": [
+    "Comenzar por lisis y continuar por IC, R, MA y ángulo α.",
+    "Un TEG normal no justifica transfusión profiláctica.",
+    "La pérdida acumulada no disminuye; el sangrado activo sí puede cesar."
+  ]
+}

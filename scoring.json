@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "points_per_question": 10,
+  "passing_percent": 80,
+  "show_feedback_immediately": true,
+  "allow_retry": true,
+  "result_bands": [
+    {
+      "min": 90,
+      "label": "Dominio alto"
+    },
+    {
+      "min": 80,
+      "label": "Competente"
+    },
+    {
+      "min": 0,
+      "label": "Requiere refuerzo"
+    }
+  ]
+}

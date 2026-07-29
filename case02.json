@@ -1,0 +1,114 @@
+{
+  "id": "case02",
+  "number": 2,
+  "title": "Déficit de factores",
+  "subtitle": "Hemorragia posparto con R prolongado",
+  "level": "Básico",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Hemorragia posparto",
+    "title": "Atonía uterina con sangrado persistente",
+    "description": "Paciente de 31 años con hemorragia obstétrica activa pese a uterotónicos y medidas iniciales. Se obtiene TEG para orientar la terapia hemostática.",
+    "monitor": {
+      "TA": "92/58 mmHg",
+      "FC": "122 lpm",
+      "SpO₂": "96 %",
+      "Temperatura": "35.8 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1,800 mL",
+      "Sangrado activo": "Moderado (25 mL/min)",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "7.8 g/dL"
+    }
+  },
+  "teg": {
+    "LY30": "1.2 %",
+    "EPL": "3 %",
+    "IC": "−2.1",
+    "R": "14.2 min",
+    "K": "2.3 min",
+    "Alpha": "61°",
+    "MA": "55 mm",
+    "pattern": "factor"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1: ¿existe hiperfibrinólisis?",
+      "answers": [
+        "Sí",
+        "No"
+      ],
+      "correct": 1,
+      "feedback": "LY30 y EPL no cumplen criterio de hiperfibrinólisis."
+    },
+    {
+      "id": "Q02",
+      "title": "Paso 2: ¿IC >3?",
+      "answers": [
+        "Sí",
+        "No"
+      ],
+      "correct": 1,
+      "feedback": "El IC es −2.1; se continúa por la rama de R prolongado."
+    },
+    {
+      "id": "Q03",
+      "title": "Paso 3: ¿qué alteración predomina?",
+      "answers": [
+        "Déficit de factores de coagulación",
+        "Hipofibrinogenemia aislada",
+        "Disfunción plaquetaria",
+        "Hiperfibrinólisis"
+      ],
+      "correct": 0,
+      "feedback": "R >10 min indica retraso en el inicio de la coagulación."
+    },
+    {
+      "id": "Q04",
+      "title": "¿Qué parámetro define principalmente esta interpretación?",
+      "answers": [
+        "LY30",
+        "R",
+        "MA",
+        "Ángulo α"
+      ],
+      "correct": 1,
+      "feedback": "R evalúa el tiempo hasta el inicio de la formación del coágulo."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Cuál es la intervención dirigida más congruente?",
+      "answers": [
+        "Reposición de factores conforme al protocolo institucional",
+        "Plaquetas como única intervención",
+        "Crioprecipitado como única intervención",
+        "Antifibrinolítico por LY30 normal"
+      ],
+      "correct": 0,
+      "feedback": "La reposición de factores debe individualizarse y acompañarse de control de la fuente."
+    }
+  ],
+  "evolution": {
+    "after": "15 min",
+    "description": "Tras control uterino progresivo y reposición dirigida de factores, disminuye el sangrado activo.",
+    "monitor": {
+      "TA": "104/66 mmHg",
+      "FC": "104 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2,050 mL",
+      "Sangrado activo": "Mínimo (4 mL/min)",
+      "Fuente": "Controlada"
+    }
+  },
+  "diagnosis": "Déficit de factores de coagulación",
+  "debrief": [
+    "R prolongado orienta a déficit o disfunción de factores.",
+    "La terapia hemostática no sustituye el control de la fuente.",
+    "La pérdida acumulada aumentó de 1,800 a 2,050 mL; nunca disminuye."
+  ]
+}
