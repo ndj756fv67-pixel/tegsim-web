@@ -54,5 +54,13 @@
   "subtitle": "Interpretación seriada del TEG",
   "level": "Avanzado",
   "available": true
-}  
+},
+  {
+  "id": "case08",
+  "number": 8,
+  "title": "Hemorragia obstétrica con deterioro progresivo",
+  "subtitle": "Integración clínica y reevaluación",
+  "level": "Experto",
+  "available": true
+}
 ]
