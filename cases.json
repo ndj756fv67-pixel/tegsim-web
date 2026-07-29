@@ -94,5 +94,13 @@
   "subtitle": "Adaptar el tratamiento conforme cambia el TEG",
   "level": "Experto",
   "available": true
+},
+ {
+  "id": "case13",
+  "number": 13,
+  "title": "Colapso materno durante cesárea",
+  "subtitle": "Reconocer una coagulopatía de consumo rápidamente progresiva",
+  "level": "Experto",
+  "available": true
 } 
 ]
