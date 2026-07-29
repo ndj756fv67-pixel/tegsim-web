@@ -70,5 +70,13 @@
   "subtitle": "Diferenciar coagulopatía de una fuente activa",
   "level": "Experto",
   "available": true
-}  
+},
+ {
+  "id": "case10",
+  "number": 10,
+  "title": "Inestabilidad hemodinámica persistente",
+  "subtitle": "Integración del TEG con el contexto clínico",
+  "level": "Experto",
+  "available": true
+} 
 ]
