@@ -46,5 +46,13 @@
   "subtitle": "Interpretación integral del TEG",
   "level": "Avanzado",
   "available": true
+},
+ {
+  "id": "case07",
+  "number": 7,
+  "title": "Hemorragia obstétrica con reevaluación hemostática",
+  "subtitle": "Interpretación seriada del TEG",
+  "level": "Avanzado",
+  "available": true
 }  
 ]
