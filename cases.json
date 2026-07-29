@@ -62,5 +62,13 @@
   "subtitle": "Integración clínica y reevaluación",
   "level": "Experto",
   "available": true
-}
+},
+{
+  "id": "case09",
+  "number": 9,
+  "title": "Sangrado persistente tras la reanimación inicial",
+  "subtitle": "Diferenciar coagulopatía de una fuente activa",
+  "level": "Experto",
+  "available": true
+}  
 ]
