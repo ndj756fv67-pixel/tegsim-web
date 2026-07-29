@@ -30,5 +30,13 @@
   "subtitle": "MA disminuido con R normal",
   "level": "Intermedio",
   "available": true
+},
+  {
+  "id": "case05",
+  "number": 5,
+  "title": "Hiperfibrinólisis",
+  "subtitle": "LY30 y EPL elevados con formación inicial del coágulo conservada",
+  "level": "Intermedio",
+  "available": true
 }
 ]
