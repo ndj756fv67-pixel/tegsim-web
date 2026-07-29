@@ -1,0 +1,133 @@
+{
+  "id": "case15",
+  "number": 15,
+  "title": "Hemorragia obstétrica masiva: simulación integradora",
+  "subtitle": "Aplicación completa del algoritmo TEG",
+  "level": "Experto",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Competencia 3",
+    "title": "Escenario final",
+    "description": "Paciente de 31 años, G3P3, con hemorragia obstétrica masiva posterior a placenta previa y atonía uterina. A pesar del manejo inicial, continúa inestable. El equipo debe integrar la evolución clínica, el TEG y la respuesta al tratamiento para dirigir la reanimación.",
+    "monitor": {
+      "TA": "76/42 mmHg",
+      "FC": "142 lpm",
+      "SpO₂": "95 %",
+      "Temperatura": "35.4 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2500 mL",
+      "Sangrado activo": "50 mL/min",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "6.8 g/dL",
+      "Plaquetas": "92000/µL",
+      "Fibrinógeno": "145 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "1 %",
+    "EPL": "1 %",
+    "IC": "-4.2",
+    "R": "11.8 min",
+    "K": "3.4 min",
+    "Alpha": "44°",
+    "MA": "49 mm",
+    "pattern": "mixed"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1. ¿Existe hiperfibrinólisis?",
+      "answers": [
+        "No, LY30 y EPL no muestran hiperfibrinólisis significativa",
+        "Sí, porque la paciente presenta hemorragia masiva",
+        "No puede determinarse"
+      ],
+      "correct": 0,
+      "feedback": "La interpretación debe comenzar por la lisis; en este momento no existe hiperfibrinólisis predominante."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Cuál es el defecto predominante del primer TEG?",
+      "answers": [
+        "Hipocoagulabilidad multifactorial con déficit de factores predominante",
+        "Disfunción plaquetaria aislada",
+        "TEG normal"
+      ],
+      "correct": 0,
+      "feedback": "El R prolongado indica que el primer objetivo es corregir el retraso en el inicio de la coagulación."
+    },
+    {
+      "id": "Q03",
+      "title": "Después del tratamiento inicial, el sangrado persiste. ¿Qué conducta es la más apropiada?",
+      "answers": [
+        "Repetir el TEG e integrar la evolución clínica",
+        "Administrar todos los hemoderivados sin reevaluar",
+        "Esperar únicamente nuevos laboratorios"
+      ],
+      "correct": 0,
+      "feedback": "La reevaluación funcional permite identificar el nuevo defecto predominante."
+    },
+    {
+      "id": "Q04",
+      "title": "El segundo TEG muestra K prolongado y ángulo α disminuido. ¿Qué interpreta?",
+      "answers": [
+        "Hipofibrinogenemia predominante",
+        "Hiperfibrinólisis",
+        "Coagulación normal"
+      ],
+      "correct": 0,
+      "feedback": "El patrón es compatible con déficit de fibrinógeno."
+    },
+    {
+      "id": "Q05",
+      "title": "Tras corregir el fibrinógeno, un tercer TEG evidencia LY30 de 17 %. ¿Cuál es la siguiente prioridad?",
+      "answers": [
+        "Tratar la hiperfibrinólisis y continuar el control definitivo de la fuente",
+        "Administrar únicamente plaquetas",
+        "Suspender la reanimación porque el R ya es normal"
+      ],
+      "correct": 0,
+      "feedback": "La prioridad cambia conforme evoluciona la coagulación y siempre debe acompañarse del control de la fuente."
+    }
+  ],
+  "evolution": {
+    "after": "60 min",
+    "description": "Se realizaron dos reevaluaciones adicionales con TEG. Tras tratamiento secuencial dirigido a los defectos predominantes y el control definitivo de la fuente de sangrado, la paciente mejoró hemodinámicamente.",
+    "monitor": {
+      "TA": "112/70 mmHg",
+      "FC": "88 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "3600 mL",
+      "Sangrado activo": "3 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "Segundo TEG": {
+        "R": "6.7 min",
+        "K": "3.7 min",
+        "Alpha": "46°",
+        "MA": "52 mm",
+        "LY30": "1 %"
+      },
+      "Tercer TEG": {
+        "R": "6.0 min",
+        "K": "1.8 min",
+        "Alpha": "66°",
+        "MA": "58 mm",
+        "LY30": "17 %"
+      }
+    }
+  },
+  "diagnosis": "Hemorragia obstétrica masiva con evolución secuencial de coagulopatía multifactorial, hipofibrinogenemia e hiperfibrinólisis, resuelta mediante tratamiento dirigido y control de la fuente.",
+  "debrief": [
+    "Este caso integra todos los conceptos desarrollados en el simulador.",
+    "El algoritmo debe mantenerse en cada reevaluación: lisis, IC, R, MA, ángulo α e integración clínica.",
+    "La coagulación es dinámica y el tratamiento debe adaptarse al defecto predominante.",
+    "El TEG complementa, pero no sustituye, el juicio clínico ni el control definitivo de la fuente.",
+    "La pérdida acumulada aumentó de 2500 a 3600 mL; el sangrado activo disminuyó tras el tratamiento dirigido."
+  ]
+}
