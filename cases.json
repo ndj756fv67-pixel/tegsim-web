@@ -38,5 +38,13 @@
   "subtitle": "LY30 y EPL elevados con formación inicial del coágulo conservada",
   "level": "Intermedio",
   "available": true
-}
+},
+ {
+  "id": "case06",
+  "number": 6,
+  "title": "Hemorragia obstétrica masiva",
+  "subtitle": "Interpretación integral del TEG",
+  "level": "Avanzado",
+  "available": true
+}  
 ]
