@@ -1,0 +1,121 @@
+{
+  "id": "case05",
+  "number": 5,
+  "title": "Hiperfibrinólisis",
+  "subtitle": "LY30 y EPL elevados con formación inicial del coágulo conservada",
+  "level": "Intermedio",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Hemorragia obstétrica",
+    "title": "Hemorragia posparto con lisis acelerada del coágulo",
+    "description": "Paciente de 29 años, G3 P3, con hemorragia posparto inmediata posterior a parto vaginal. Presenta atonía uterina que responde parcialmente a uterotónicos y masaje uterino. Aunque mejora el tono uterino, persiste sangrado difuso, por lo que se solicita TEG para orientar la terapia hemostática.",
+    "monitor": {
+      "TA": "96/58 mmHg",
+      "FC": "118 lpm",
+      "SpO₂": "97 %",
+      "Temperatura": "36.1 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1,650 mL",
+      "Sangrado activo": "Importante (35 mL/min)",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "8.1 g/dL",
+      "Plaquetas": "142,000/µL"
+    }
+  },
+  "teg": {
+    "LY30": "18 %",
+    "EPL": "22 %",
+    "IC": "−1.8",
+    "R": "6.1 min",
+    "K": "1.7 min",
+    "Alpha": "68°",
+    "MA": "56 mm",
+    "pattern": "lysis"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1: ¿existe hiperfibrinólisis?",
+      "answers": [
+        "Sí, por elevación marcada de LY30 y EPL",
+        "No, porque R está conservado",
+        "No, porque MA es mayor de 54 mm"
+      ],
+      "correct": 0,
+      "feedback": "LY30 de 18 % y EPL de 22 % indican destrucción acelerada del coágulo. La lisis se evalúa antes que los demás componentes del algoritmo."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Qué representa el aumento de LY30?",
+      "answers": [
+        "Retraso en el inicio de la coagulación",
+        "Disminución exclusiva de la función plaquetaria",
+        "Pérdida de firmeza del coágulo por fibrinólisis después de alcanzar la MA",
+        "Aumento de la formación de fibrina"
+      ],
+      "correct": 2,
+      "feedback": "LY30 expresa el porcentaje de reducción de la amplitud 30 minutos después de alcanzar la máxima firmeza del coágulo."
+    },
+    {
+      "id": "Q03",
+      "title": "Después de identificar la lisis, ¿cómo se interpretan R, MA y ángulo α?",
+      "answers": [
+        "La formación inicial y la fuerza máxima del coágulo están relativamente conservadas",
+        "Existe déficit predominante de factores por R prolongado",
+        "Existe hipofibrinogenemia predominante por ángulo α disminuido",
+        "Existe trombocitopenia grave por MA disminuida"
+      ],
+      "correct": 0,
+      "feedback": "R, MA y ángulo α están conservados. El defecto predominante es la degradación acelerada de un coágulo que inicialmente se forma con características adecuadas."
+    },
+    {
+      "id": "Q04",
+      "title": "¿Cuál es la intervención hemostática dirigida más congruente?",
+      "answers": [
+        "Ácido tranexámico, además del control de la fuente y la reanimación",
+        "Plasma fresco congelado como única intervención",
+        "Concentrado plaquetario como única intervención",
+        "Crioprecipitado como única intervención"
+      ],
+      "correct": 0,
+      "feedback": "La hiperfibrinólisis orienta al uso temprano de un antifibrinolítico. En hemorragia posparto, el ácido tranexámico debe administrarse junto con las medidas estándar y el control de la fuente."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Qué conducta sería incorrecta en este escenario?",
+      "answers": [
+        "Continuar las maniobras para controlar la fuente del sangrado",
+        "Administrar ácido tranexámico según el protocolo institucional",
+        "Esperar a que R o MA se alteren antes de tratar la lisis evidente",
+        "Reevaluar la respuesta clínica y hemostática"
+      ],
+      "correct": 2,
+      "feedback": "La lisis se encuentra al inicio del algoritmo porque puede destruir rápidamente un coágulo inicialmente adecuado. No debe retrasarse el tratamiento esperando alteraciones posteriores."
+    }
+  ],
+  "evolution": {
+    "after": "15 min",
+    "description": "Tras administrar ácido tranexámico y completar las medidas de control uterino, disminuye de forma importante el sangrado difuso. La paciente mejora hemodinámicamente y la reevaluación clínica muestra mayor estabilidad del coágulo.",
+    "monitor": {
+      "TA": "108/66 mmHg",
+      "FC": "98 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1,870 mL",
+      "Sangrado activo": "Escaso (5 mL/min)",
+      "Fuente": "Controlada"
+    }
+  },
+  "diagnosis": "Hiperfibrinólisis",
+  "debrief": [
+    "La lisis debe evaluarse al inicio del algoritmo mediante EPL y LY30.",
+    "Una elevación marcada de LY30 y EPL indica degradación acelerada del coágulo después de su formación.",
+    "R, MA y ángulo α pueden estar inicialmente conservados cuando el problema predominante es la fibrinólisis.",
+    "En hemorragia posparto, el ácido tranexámico debe administrarse tempranamente junto con la atención estándar y el control de la fuente, siguiendo el protocolo institucional.",
+    "La terapia antifibrinolítica no sustituye los uterotónicos, la reparación quirúrgica ni otras medidas necesarias para controlar el origen del sangrado.",
+    "La pérdida acumulada aumentó de 1,650 a 1,870 mL; nunca disminuye, aunque el sangrado activo se reduzca."
+  ]
+}
