@@ -1,0 +1,125 @@
+{
+  "id": "case10",
+  "number": 10,
+  "title": "Inestabilidad hemodinámica persistente",
+  "subtitle": "Integración del TEG con el contexto clínico",
+  "level": "Experto",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Emergencia obstétrica",
+    "title": "Deterioro pese a una hemostasia aparentemente adecuada",
+    "description": "Paciente de 30 años, G2P2, sometida a cesárea urgente por hemorragia obstétrica. Tras el manejo inicial y el control parcial del sangrado continúa con hipotensión y taquicardia. Se solicita un TEG para determinar si la inestabilidad se debe a una coagulopatía o si debe buscarse otra causa.",
+    "monitor": {
+      "TA": "78/44 mmHg",
+      "FC": "138 lpm",
+      "SpO₂": "96 %",
+      "Temperatura": "36.0 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1800 mL",
+      "Sangrado activo": "8 mL/min",
+      "Fuente": "Controlada"
+    },
+    "labs": {
+      "Hb": "8.0 g/dL",
+      "Plaquetas": "185000/µL",
+      "Fibrinógeno": "285 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "1 %",
+    "EPL": "1 %",
+    "IC": "0.2",
+    "R": "5.9 min",
+    "K": "1.6 min",
+    "Alpha": "69°",
+    "MA": "62 mm",
+    "pattern": "normal"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "¿Existe hiperfibrinólisis?",
+      "answers": [
+        "No",
+        "Sí"
+      ],
+      "correct": 0,
+      "feedback": "La lisis es normal."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Cómo interpreta el TEG en conjunto?",
+      "answers": [
+        "No hay una coagulopatía significativa",
+        "Existe déficit grave de factores",
+        "Existe trombocitopenia severa"
+      ],
+      "correct": 0,
+      "feedback": "Todos los parámetros son funcionalmente adecuados."
+    },
+    {
+      "id": "Q03",
+      "title": "¿Qué explica mejor la inestabilidad persistente?",
+      "answers": [
+        "Debe buscarse otra causa además de la coagulación",
+        "La paciente requiere más plasma de rutina",
+        "Debe administrarse antifibrinolítico"
+      ],
+      "correct": 0,
+      "feedback": "El TEG ayuda a descartar una coagulopatía como causa principal."
+    },
+    {
+      "id": "Q04",
+      "title": "¿Cuál es la conducta más apropiada?",
+      "answers": [
+        "Continuar la búsqueda sistemática de la causa del choque y mantener la reanimación",
+        "Administrar todos los hemoderivados de forma empírica",
+        "Ignorar los hallazgos del TEG"
+      ],
+      "correct": 0,
+      "feedback": "El tratamiento debe dirigirse a la causa identificada."
+    },
+    {
+      "id": "Q05",
+      "title": "Tras identificar una hemorragia retroperitoneal y controlarla, la paciente mejora. ¿Qué aprendizaje deja este caso?",
+      "answers": [
+        "El TEG debe integrarse con la valoración clínica",
+        "Todo choque obstétrico es una coagulopatía",
+        "Un TEG normal descarta cualquier problema"
+      ],
+      "correct": 0,
+      "feedback": "El TEG complementa, no sustituye, el juicio clínico."
+    }
+  ],
+  "evolution": {
+    "after": "35 min",
+    "description": "Se identifica una hemorragia retroperitoneal secundaria a lesión vascular. Tras su reparación mejora la estabilidad hemodinámica sin requerir componentes hemostáticos adicionales.",
+    "monitor": {
+      "TA": "110/68 mmHg",
+      "FC": "94 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2050 mL",
+      "Sangrado activo": "3 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "LY30": "1 %",
+      "EPL": "1 %",
+      "IC": "0.3",
+      "R": "5.8 min",
+      "K": "1.5 min",
+      "Alpha": "70°",
+      "MA": "63 mm"
+    }
+  },
+  "diagnosis": "Choque hemorrágico persistente por lesión vascular oculta con TEG sin alteraciones significativas.",
+  "debrief": [
+    "Un TEG normal no explica toda inestabilidad hemodinámica.",
+    "Siempre integre el TEG con la exploración clínica y el control de la fuente.",
+    "El uso dirigido de hemoderivados evita transfusiones innecesarias.",
+    "La pérdida acumulada aumentó de 1800 a 2050 mL mientras el sangrado activo disminuyó tras reparar la lesión.",
+    "El TEG es una herramienta para apoyar la toma de decisiones, no reemplaza el razonamiento clínico."
+  ]
+}
