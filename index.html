@@ -72,6 +72,13 @@
   </main>
 
   <div id="appMessage" class="app-message" role="status" aria-live="polite"></div>
-  <script src="app.js" defer></script>
+  <script src="app.js" defer></script><script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .catch(error => console.error('Error SW:', error));
+    });
+  }
+</script>
 </body>
 </html>
