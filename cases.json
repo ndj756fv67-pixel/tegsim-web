@@ -22,5 +22,101 @@
     "subtitle": "Formación lenta y coágulo débil",
     "level": "Básico",
     "available": true
-  }
+  },
+  {
+  "id": "case04",
+  "number": 4,
+  "title": "Trombocitopenia / Disfunción plaquetaria",
+  "subtitle": "MA disminuido con R normal",
+  "level": "Intermedio",
+  "available": true
+},
+  {
+  "id": "case05",
+  "number": 5,
+  "title": "Hiperfibrinólisis",
+  "subtitle": "LY30 y EPL elevados con formación inicial del coágulo conservada",
+  "level": "Intermedio",
+  "available": true
+},
+ {
+  "id": "case06",
+  "number": 6,
+  "title": "Hemorragia obstétrica masiva",
+  "subtitle": "Interpretación integral del TEG",
+  "level": "Avanzado",
+  "available": true
+},
+ {
+  "id": "case07",
+  "number": 7,
+  "title": "Hemorragia obstétrica con reevaluación hemostática",
+  "subtitle": "Interpretación seriada del TEG",
+  "level": "Avanzado",
+  "available": true
+},
+  {
+  "id": "case08",
+  "number": 8,
+  "title": "Hemorragia obstétrica con deterioro progresivo",
+  "subtitle": "Integración clínica y reevaluación",
+  "level": "Experto",
+  "available": true
+},
+{
+  "id": "case09",
+  "number": 9,
+  "title": "Sangrado persistente tras la reanimación inicial",
+  "subtitle": "Diferenciar coagulopatía de una fuente activa",
+  "level": "Experto",
+  "available": true
+},
+ {
+  "id": "case10",
+  "number": 10,
+  "title": "Inestabilidad hemodinámica persistente",
+  "subtitle": "Integración del TEG con el contexto clínico",
+  "level": "Experto",
+  "available": true
+},
+ {
+  "id": "case11",
+  "number": 11,
+  "title": "Sangrado difuso con datos discordantes",
+  "subtitle": "Priorizar la interpretación integral sobre un dato aislado",
+  "level": "Experto",
+  "available": true
+},
+ {
+  "id": "case12",
+  "number": 12,
+  "title": "Hemorragia obstétrica con evolución dinámica",
+  "subtitle": "Adaptar el tratamiento conforme cambia el TEG",
+  "level": "Experto",
+  "available": true
+},
+ {
+  "id": "case13",
+  "number": 13,
+  "title": "Colapso materno durante cesárea",
+  "subtitle": "Reconocer una coagulopatía de consumo rápidamente progresiva",
+  "level": "Experto",
+  "available": true
+},
+  {
+  "id": "case14",
+  "number": 14,
+  "title": "Hemorragia masiva con múltiples alteraciones",
+  "subtitle": "Priorizar el tratamiento hemostático",
+  "level": "Experto",
+  "available": true
+},
+  {
+  "id": "case15",
+  "number": 15,
+  "title": "Hemorragia obstétrica masiva: simulación integradora",
+  "subtitle": "Aplicación completa del algoritmo TEG",
+  "level": "Experto",
+  "available": true
+}
 ]

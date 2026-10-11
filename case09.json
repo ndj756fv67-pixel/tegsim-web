@@ -1,0 +1,130 @@
+{
+  "id": "case09",
+  "number": 9,
+  "title": "Sangrado persistente tras la reanimación inicial",
+  "subtitle": "Diferenciar coagulopatía de una fuente activa",
+  "level": "Experto",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Emergencia obstétrica",
+    "title": "Hemorragia que continúa pese a la corrección hemostática",
+    "description": "Paciente de 33 años, G3P3, con hemorragia posparto posterior a cesárea. Recibió reanimación inicial y tratamiento hemostático dirigido por un primer TEG alterado. El tono uterino ha mejorado, pero continúa la salida de sangre roja por el drenaje quirúrgico. Se obtiene un nuevo TEG para decidir si requiere más hemoderivados o una intervención diferente.",
+    "monitor": {
+      "TA": "94/58 mmHg",
+      "FC": "116 lpm",
+      "SpO₂": "97 %",
+      "Temperatura": "36.2 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2400 mL",
+      "Sangrado activo": "30 mL/min",
+      "Fuente": "No controlada"
+    },
+    "labs": {
+      "Hb": "7.6 g/dL",
+      "Plaquetas": "126000/µL",
+      "Fibrinógeno": "245 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "1 %",
+    "EPL": "1 %",
+    "IC": "-0.4",
+    "R": "6.2 min",
+    "K": "1.8 min",
+    "Alpha": "66°",
+    "MA": "59 mm",
+    "pattern": "normal"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1. ¿Existe hiperfibrinólisis?",
+      "answers": [
+        "No, LY30 y EPL están conservados",
+        "Sí, porque el sangrado continúa",
+        "No puede determinarse sin conocer la hemoglobina"
+      ],
+      "correct": 0,
+      "feedback": "El sangrado clínico no equivale automáticamente a hiperfibrinólisis. LY30 y EPL se encuentran conservados."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Cómo interpreta el estado global de la coagulación?",
+      "answers": [
+        "El TEG está globalmente dentro de límites funcionales",
+        "Existe hipocoagulabilidad grave",
+        "Existe déficit aislado de factores"
+      ],
+      "correct": 0,
+      "feedback": "El IC, R, K, ángulo α y MA no muestran un defecto hemostático predominante que explique por sí solo el sangrado persistente."
+    },
+    {
+      "id": "Q03",
+      "title": "¿Cuál es la explicación más probable del sangrado activo?",
+      "answers": [
+        "Persistencia de una fuente anatómica o quirúrgica",
+        "Déficit grave de fibrinógeno",
+        "Trombocitopenia funcional aislada",
+        "Hiperfibrinólisis"
+      ],
+      "correct": 0,
+      "feedback": "Cuando el TEG está corregido y el sangrado continúa, debe buscarse de forma prioritaria una fuente activa que requiera control definitivo."
+    },
+    {
+      "id": "Q04",
+      "title": "¿Cuál es la conducta inmediata más adecuada?",
+      "answers": [
+        "Reevaluar y controlar la fuente, manteniendo la reanimación y vigilancia",
+        "Administrar nuevamente todos los hemoderivados de forma empírica",
+        "Administrar solo plaquetas",
+        "Esperar sin realizar ninguna intervención"
+      ],
+      "correct": 0,
+      "feedback": "Un TEG sin alteraciones relevantes no justifica repetir de manera automática todos los componentes. La prioridad es identificar y controlar la causa del sangrado."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Qué hallazgo posterior confirmaría que la estrategia fue correcta?",
+      "answers": [
+        "Disminución del sangrado tras reparar una fuente activa, sin deterioro del TEG",
+        "Normalización de la hemoglobina sin controlar la fuente",
+        "Aumento de la pérdida acumulada con sangrado activo sin cambios",
+        "Administración de más hemoderivados aunque el TEG permanezca normal"
+      ],
+      "correct": 0,
+      "feedback": "La mejoría después del control anatómico, con estabilidad hemostática, confirma que el problema principal no era una coagulopatía persistente."
+    }
+  ],
+  "evolution": {
+    "after": "20 min",
+    "description": "La revisión quirúrgica identifica sangrado activo en un ángulo de la histerotomía. Después de la reparación, el sangrado disminuye de manera marcada. No se administran componentes hemostáticos adicionales de forma empírica y la paciente mejora hemodinámicamente.",
+    "monitor": {
+      "TA": "108/66 mmHg",
+      "FC": "96 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2650 mL",
+      "Sangrado activo": "4 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "LY30": "1 %",
+      "EPL": "1 %",
+      "IC": "-0.2",
+      "R": "6.0 min",
+      "K": "1.7 min",
+      "Alpha": "67°",
+      "MA": "60 mm"
+    }
+  },
+  "diagnosis": "Hemorragia persistente por fuente quirúrgica activa, sin coagulopatía significativa en la reevaluación.",
+  "debrief": [
+    "El diagnóstico no se revela al inicio; debe deducirse mediante la integración clínica y el TEG.",
+    "El sangrado persistente no siempre significa que exista una coagulopatía activa.",
+    "Un TEG funcionalmente corregido obliga a reconsiderar una causa anatómica o quirúrgica del sangrado.",
+    "La transfusión empírica repetida puede exponer a la paciente a productos innecesarios si no existe un defecto demostrado.",
+    "La pérdida acumulada aumentó de 2400 a 2650 mL; lo que disminuyó fue el sangrado activo.",
+    "El control definitivo de la fuente sigue siendo indispensable, aun cuando la reanimación hemostática sea adecuada."
+  ]
+}

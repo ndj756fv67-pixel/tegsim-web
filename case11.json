@@ -1,0 +1,133 @@
+{
+  "id": "case11",
+  "number": 11,
+  "title": "Sangrado difuso con datos discordantes",
+  "subtitle": "Priorizar la interpretación integral sobre un dato aislado",
+  "level": "Experto",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Emergencia obstétrica",
+    "title": "Coagulopatía aparente con trombocitopenia",
+    "description": "Paciente de 35 años, G3P2, sometida a cesárea urgente por complicación obstétrica. Durante el procedimiento presenta sangrado difuso y persistente. El laboratorio reporta trombocitopenia, por lo que el equipo considera transfundir plaquetas de forma inmediata. Se solicita TEG para identificar el defecto hemostático predominante y dirigir el tratamiento.",
+    "monitor": {
+      "TA": "92/56 mmHg",
+      "FC": "120 lpm",
+      "SpO₂": "97 %",
+      "Temperatura": "35.9 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1950 mL",
+      "Sangrado activo": "28 mL/min",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "7.9 g/dL",
+      "Plaquetas": "58000/µL",
+      "Fibrinógeno": "265 mg/dL",
+      "TP": "Prolongado",
+      "TTPa": "Prolongado"
+    }
+  },
+  "teg": {
+    "LY30": "1 %",
+    "EPL": "1 %",
+    "IC": "-3.6",
+    "R": "12.2 min",
+    "K": "2.0 min",
+    "Alpha": "63°",
+    "MA": "57 mm",
+    "pattern": "factor_deficiency"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1. ¿Existe hiperfibrinólisis?",
+      "answers": [
+        "No, LY30 y EPL están conservados",
+        "Sí, porque existe sangrado difuso",
+        "No puede determinarse por la trombocitopenia"
+      ],
+      "correct": 0,
+      "feedback": "La presencia de sangrado no equivale por sí sola a hiperfibrinólisis. LY30 y EPL se encuentran dentro de límites funcionales."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Qué indica el R de 12.2 minutos?",
+      "answers": [
+        "Déficit o consumo significativo de factores de coagulación",
+        "Disfunción plaquetaria aislada",
+        "Hipofibrinogenemia predominante",
+        "Coagulación normal"
+      ],
+      "correct": 0,
+      "feedback": "El R prolongado señala retraso en el inicio de la coagulación y orienta a déficit o consumo de factores."
+    },
+    {
+      "id": "Q03",
+      "title": "Aunque el recuento plaquetario es bajo, ¿cómo debe interpretarse una MA de 57 mm?",
+      "answers": [
+        "La fuerza global del coágulo está relativamente conservada",
+        "Existe disfunción plaquetaria grave obligatoria",
+        "La MA no aporta información en trombocitopenia",
+        "Confirma hiperfibrinólisis"
+      ],
+      "correct": 0,
+      "feedback": "La MA refleja la fuerza global del coágulo. En este caso no demuestra un defecto predominante de firmeza, pese al recuento plaquetario bajo."
+    },
+    {
+      "id": "Q04",
+      "title": "¿Cuál es el tratamiento hemostático dirigido más congruente con el TEG?",
+      "answers": [
+        "Corregir el déficit de factores según el protocolo institucional",
+        "Administrar plaquetas como única intervención",
+        "Administrar antifibrinolítico como única intervención",
+        "No tratar porque la MA es normal"
+      ],
+      "correct": 0,
+      "feedback": "El defecto predominante es la prolongación del R. El tratamiento debe dirigirse a factores, sin basarse únicamente en un dato aislado del laboratorio."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Cuál es el principal aprendizaje de este caso?",
+      "answers": [
+        "El TEG debe integrarse con los laboratorios y la clínica, evitando tratar un número aislado",
+        "Todo recuento plaquetario bajo obliga a transfundir plaquetas",
+        "La MA sustituye por completo al recuento plaquetario",
+        "El R prolongado siempre indica hiperfibrinólisis"
+      ],
+      "correct": 0,
+      "feedback": "Ni el TEG ni los laboratorios deben interpretarse de forma aislada. La decisión se basa en el defecto funcional predominante, la evolución clínica y el protocolo institucional."
+    }
+  ],
+  "evolution": {
+    "after": "25 min",
+    "description": "Después de corregir el déficit de factores y completar el control de la fuente, el sangrado disminuye. No se administran plaquetas de forma empírica. El segundo TEG muestra normalización del R y conservación de la fuerza del coágulo.",
+    "monitor": {
+      "TA": "106/64 mmHg",
+      "FC": "98 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2180 mL",
+      "Sangrado activo": "5 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "LY30": "1 %",
+      "EPL": "1 %",
+      "IC": "-0.5",
+      "R": "6.6 min",
+      "K": "1.8 min",
+      "Alpha": "65°",
+      "MA": "56 mm"
+    }
+  },
+  "diagnosis": "Déficit predominante de factores de coagulación con fuerza global del coágulo conservada, a pesar de la trombocitopenia.",
+  "debrief": [
+    "El título clínico no revela el diagnóstico y el recuento plaquetario funciona como distractor.",
+    "El algoritmo debe mantenerse: lisis, IC, R, MA, ángulo α e integración clínica.",
+    "Un recuento plaquetario bajo no demuestra por sí solo un defecto funcional predominante en la MA.",
+    "La MA conservada orienta a que la fuerza global del coágulo permanece funcionalmente adecuada.",
+    "El R prolongado identifica el defecto principal y permite dirigir el tratamiento hacia los factores.",
+    "La pérdida acumulada aumentó de 1950 a 2180 mL; lo que disminuyó fue el sangrado activo."
+  ]
+}

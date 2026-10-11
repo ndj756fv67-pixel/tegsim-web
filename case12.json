@@ -1,0 +1,134 @@
+{
+  "id": "case12",
+  "number": 12,
+  "title": "Hemorragia obstétrica con evolución dinámica",
+  "subtitle": "Adaptar el tratamiento conforme cambia el TEG",
+  "level": "Experto",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Competencia 3",
+    "title": "La coagulación cambia durante la reanimación",
+    "description": "Paciente de 29 años, G2P2, con hemorragia obstétrica masiva secundaria a atonía uterina. A pesar de la reanimación inicial, el sangrado continúa y se decide realizar un TEG para dirigir el tratamiento.",
+    "monitor": {
+      "TA": "86/50 mmHg",
+      "FC": "132 lpm",
+      "SpO₂": "96 %",
+      "Temperatura": "35.8 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1700 mL",
+      "Sangrado activo": "35 mL/min",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "8.1 g/dL",
+      "Plaquetas": "164000/µL",
+      "Fibrinógeno": "250 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "1 %",
+    "EPL": "1 %",
+    "IC": "-3.2",
+    "R": "11.5 min",
+    "K": "2.1 min",
+    "Alpha": "63°",
+    "MA": "58 mm",
+    "pattern": "factor_deficiency"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "¿Existe hiperfibrinólisis en el primer TEG?",
+      "answers": [
+        "No, LY30 y EPL son normales",
+        "Sí, por el sangrado persistente",
+        "No puede determinarse"
+      ],
+      "correct": 0,
+      "feedback": "La lisis es normal; el defecto predominante no corresponde a hiperfibrinólisis."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Cuál es la principal alteración del primer TEG?",
+      "answers": [
+        "Déficit de factores de coagulación (R prolongado)",
+        "Hipofibrinogenemia",
+        "Disfunción plaquetaria",
+        "TEG normal"
+      ],
+      "correct": 0,
+      "feedback": "El R prolongado orienta a un defecto predominante de factores."
+    },
+    {
+      "id": "Q03",
+      "title": "Tras corregir el déficit de factores, el sangrado continúa. ¿Qué debe hacerse?",
+      "answers": [
+        "Repetir el TEG porque la situación clínica cambió",
+        "Administrar empíricamente todos los componentes",
+        "Esperar sin reevaluar"
+      ],
+      "correct": 0,
+      "feedback": "La evolución clínica obliga a una nueva valoración funcional de la coagulación."
+    },
+    {
+      "id": "Q04",
+      "title": "El segundo TEG muestra disminución importante del ángulo α y K prolongado. ¿Qué defecto predomina?",
+      "answers": [
+        "Hipofibrinogenemia",
+        "Hiperfibrinólisis",
+        "Déficit aislado de factores"
+      ],
+      "correct": 0,
+      "feedback": "El patrón es compatible con déficit de fibrinógeno."
+    },
+    {
+      "id": "Q05",
+      "title": "Tras corregir el fibrinógeno aparece LY30 de 18 %. ¿Qué significa?",
+      "answers": [
+        "Se desarrolló hiperfibrinólisis y debe tratarse",
+        "La coagulación ya es normal",
+        "Existe disfunción plaquetaria"
+      ],
+      "correct": 0,
+      "feedback": "El tratamiento debe adaptarse al nuevo defecto predominante."
+    }
+  ],
+  "evolution": {
+    "after": "45 min",
+    "description": "Durante la reanimación se realizaron dos reevaluaciones adicionales. El segundo TEG evidenció hipofibrinogenemia y, tras su corrección, un tercer TEG mostró hiperfibrinólisis. Después del tratamiento dirigido y el control definitivo de la fuente, la paciente presentó mejoría clínica.",
+    "monitor": {
+      "TA": "108/68 mmHg",
+      "FC": "92 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2600 mL",
+      "Sangrado activo": "4 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "Segundo TEG": {
+        "R": "6.5 min",
+        "K": "3.8 min",
+        "Alpha": "47°",
+        "MA": "57 mm",
+        "LY30": "1 %"
+      },
+      "Tercer TEG": {
+        "R": "6.0 min",
+        "K": "1.9 min",
+        "Alpha": "66°",
+        "MA": "59 mm",
+        "LY30": "18 %"
+      }
+    }
+  },
+  "diagnosis": "Evolución secuencial de déficit de factores, hipofibrinogenemia e hiperfibrinólisis durante la hemorragia obstétrica masiva.",
+  "debrief": [
+    "La coagulación cambia durante la reanimación; un solo TEG puede ser insuficiente.",
+    "El tratamiento debe dirigirse al defecto predominante en cada momento.",
+    "Repetir el TEG está indicado cuando la evolución clínica no corresponde con la interpretación inicial.",
+    "El algoritmo de interpretación debe mantenerse en cada reevaluación: lisis, IC, R, MA, ángulo α e integración clínica.",
+    "El control definitivo de la fuente de sangrado sigue siendo indispensable."
+  ]
+}

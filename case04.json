@@ -1,0 +1,117 @@
+{
+  "id": "case04",
+  "number": 4,
+  "title": "Trombocitopenia / Disfunción plaquetaria",
+  "subtitle": "MA disminuido con R y ángulo α conservados",
+  "level": "Intermedio",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Hemorragia obstétrica",
+    "title": "Atonía uterina con alteración plaquetaria",
+    "description": "Paciente de 31 años, G2 P2, sometida a cesárea urgente por compromiso fetal. Durante el procedimiento presenta atonía uterina. Tras oxitocina, masaje uterino y medidas iniciales persiste el sangrado, por lo que se solicita TEG para orientar la terapia hemostática.",
+    "monitor": {
+      "TA": "108/68 mmHg",
+      "FC": "104 lpm",
+      "SpO₂": "98 %",
+      "Temperatura": "36.4 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1,350 mL",
+      "Sangrado activo": "Moderado (20 mL/min)",
+      "Fuente": "Parcialmente controlada"
+    },
+    "labs": {
+      "Hb": "8.7 g/dL",
+      "Plaquetas": "48,000/µL"
+    }
+  },
+  "teg": {
+    "LY30": "0.5 %",
+    "EPL": "1 %",
+    "IC": "−2.3",
+    "R": "6.3 min",
+    "K": "1.8 min",
+    "Alpha": "69°",
+    "MA": "37 mm",
+    "pattern": "platelet"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Paso 1: ¿existe hiperfibrinólisis?",
+      "answers": [
+        "Sí, por LY30 elevado",
+        "No, LY30 y EPL no cumplen criterio"
+      ],
+      "correct": 1,
+      "feedback": "LY30 y EPL están por debajo de los umbrales de hiperfibrinólisis; se continúa con el algoritmo."
+    },
+    {
+      "id": "Q02",
+      "title": "Paso 2: ¿cómo interpreta el índice de coagulación?",
+      "answers": [
+        "IC >3: hipercoagulabilidad",
+        "IC dentro del rango sin desviación predominante",
+        "IC disminuido, compatible con tendencia hipocoagulable"
+      ],
+      "correct": 2,
+      "feedback": "El IC de −2.3 orienta hacia hipocoagulabilidad, pero debe identificarse el componente alterado mediante R, MA y ángulo α."
+    },
+    {
+      "id": "Q03",
+      "title": "Paso 3: ¿cómo interpreta R?",
+      "answers": [
+        "Prolongado: predomina déficit de factores",
+        "Conservado",
+        "Acortado: hipercoagulabilidad enzimática"
+      ],
+      "correct": 1,
+      "feedback": "R de 6.3 minutos está conservado y no orienta a déficit predominante de factores."
+    },
+    {
+      "id": "Q04",
+      "title": "Paso 4: MA <54 mm con ángulo α conservado sugiere:",
+      "answers": [
+        "Hipofibrinogenemia predominante",
+        "Trombocitopenia o disfunción plaquetaria",
+        "Hiperfibrinólisis",
+        "TEG normal"
+      ],
+      "correct": 1,
+      "feedback": "Una MA disminuida con ángulo α conservado orienta a alteración de la cantidad o función plaquetaria."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Cuál es la intervención hemostática dirigida más congruente?",
+      "answers": [
+        "Plasma fresco congelado como única intervención",
+        "Fibrinógeno o crioprecipitado como única intervención",
+        "Concentrado plaquetario según el contexto clínico y el protocolo institucional",
+        "Ácido tranexámico por LY30 normal"
+      ],
+      "correct": 2,
+      "feedback": "Con hemorragia activa, trombocitopenia y MA disminuida, la reposición plaquetaria es la intervención dirigida, sin sustituir el control de la fuente."
+    }
+  ],
+  "evolution": {
+    "after": "15 min",
+    "description": "Tras la administración de concentrado plaquetario y completar el control uterino, disminuye de forma importante el sangrado activo y mejora la estabilidad hemodinámica.",
+    "monitor": {
+      "TA": "118/74 mmHg",
+      "FC": "92 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "1,520 mL",
+      "Sangrado activo": "Mínimo (3 mL/min)",
+      "Fuente": "Controlada"
+    }
+  },
+  "diagnosis": "Trombocitopenia o disfunción plaquetaria",
+  "debrief": [
+    "Una MA disminuida refleja reducción de la fuerza máxima del coágulo.",
+    "Cuando R está conservado y el ángulo α no está disminuido, una MA baja orienta a trombocitopenia o disfunción plaquetaria.",
+    "El plasma fresco congelado no corrige una trombocitopenia aislada; la reposición debe dirigirse al componente alterado.",
+    "La terapia hemostática debe acompañar, nunca sustituir, el control de la fuente del sangrado.",
+    "La pérdida acumulada aumentó de 1,350 a 1,520 mL; nunca disminuye, aunque el sangrado activo se reduzca."
+  ]
+}

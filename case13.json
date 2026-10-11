@@ -1,0 +1,126 @@
+{
+  "id": "case13",
+  "number": 13,
+  "title": "Colapso materno durante cesárea",
+  "subtitle": "Reconocer una coagulopatía de consumo rápidamente progresiva",
+  "level": "Experto",
+  "available": true,
+  "clinical": {
+    "eyebrow": "Competencia 3",
+    "title": "Deterioro súbito con hemorragia masiva",
+    "description": "Paciente de 32 años, G2P1, durante cesárea presenta hipotensión brusca, hipoxemia y sangrado difuso. Tras estabilización inicial se solicita TEG para orientar el manejo hemostático.",
+    "monitor": {
+      "TA": "64/38 mmHg",
+      "FC": "146 lpm",
+      "SpO₂": "82 %",
+      "Temperatura": "35.6 °C"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2200 mL",
+      "Sangrado activo": "60 mL/min",
+      "Fuente": "No controlada"
+    },
+    "labs": {
+      "Hb": "7.2 g/dL",
+      "Plaquetas": "68000/µL",
+      "Fibrinógeno": "105 mg/dL"
+    }
+  },
+  "teg": {
+    "LY30": "2 %",
+    "EPL": "2 %",
+    "IC": "-5.2",
+    "R": "13.8 min",
+    "K": "4.8 min",
+    "Alpha": "33°",
+    "MA": "38 mm",
+    "pattern": "mixed"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "¿Existe hiperfibrinólisis en el TEG inicial?",
+      "answers": [
+        "No, la lisis no es el defecto predominante",
+        "Sí, porque existe sangrado masivo",
+        "No puede determinarse"
+      ],
+      "correct": 0,
+      "feedback": "LY30 y EPL no muestran hiperfibrinólisis significativa en este momento."
+    },
+    {
+      "id": "Q02",
+      "title": "¿Qué alteración predomina?",
+      "answers": [
+        "Coagulopatía de consumo con alteración multifactorial",
+        "Disfunción plaquetaria aislada",
+        "TEG normal"
+      ],
+      "correct": 0,
+      "feedback": "Existe prolongación del R, disminución del ángulo α y MA baja, compatible con una alteración global."
+    },
+    {
+      "id": "Q03",
+      "title": "¿Cuál debe ser la prioridad además del tratamiento hemostático?",
+      "answers": [
+        "Soporte vital y control obstétrico simultáneo",
+        "Esperar nuevos laboratorios antes de intervenir",
+        "Administrar únicamente plaquetas"
+      ],
+      "correct": 0,
+      "feedback": "La paciente requiere reanimación integral y tratamiento dirigido en paralelo."
+    },
+    {
+      "id": "Q04",
+      "title": "Tras el tratamiento, ¿cuándo debe repetirse el TEG?",
+      "answers": [
+        "Cuando cambie el estado clínico o tras una intervención importante",
+        "Nunca",
+        "Solo al finalizar la cirugía"
+      ],
+      "correct": 0,
+      "feedback": "La reevaluación funcional es fundamental en escenarios dinámicos."
+    },
+    {
+      "id": "Q05",
+      "title": "¿Qué aprendizaje resume mejor este caso?",
+      "answers": [
+        "El TEG orienta el tratamiento, pero siempre debe integrarse con el soporte vital y el control de la fuente",
+        "El TEG sustituye la valoración clínica",
+        "Todo sangrado requiere el mismo tratamiento"
+      ],
+      "correct": 0,
+      "feedback": "La interpretación del TEG forma parte del manejo integral del choque hemorrágico."
+    }
+  ],
+  "evolution": {
+    "after": "30 min",
+    "description": "Tras la reanimación avanzada, el tratamiento hemostático dirigido y el control obstétrico, el sangrado disminuye y mejora la estabilidad hemodinámica. El TEG muestra recuperación parcial de la coagulación.",
+    "monitor": {
+      "TA": "98/60 mmHg",
+      "FC": "108 lpm"
+    },
+    "hemorrhage": {
+      "Pérdida acumulada": "2900 mL",
+      "Sangrado activo": "8 mL/min",
+      "Fuente": "Controlada"
+    },
+    "repeatTEG": {
+      "LY30": "1 %",
+      "EPL": "1 %",
+      "IC": "-1.2",
+      "R": "7.4 min",
+      "K": "2.2 min",
+      "Alpha": "58°",
+      "MA": "52 mm"
+    }
+  },
+  "diagnosis": "Coagulopatía de consumo rápidamente progresiva compatible con embolia de líquido amniótico.",
+  "debrief": [
+    "El diagnóstico no se revela al inicio y debe inferirse por la evolución clínica.",
+    "La embolia de líquido amniótico puede desencadenar una coagulopatía de consumo grave.",
+    "El algoritmo de interpretación del TEG debe mantenerse incluso en situaciones críticas.",
+    "El tratamiento debe combinar soporte vital, control obstétrico y terapia hemostática dirigida.",
+    "La pérdida acumulada aumentó de 2200 a 2900 mL; el sangrado activo disminuyó tras el tratamiento."
+  ]
+}
